@@ -1,0 +1,14 @@
+packages:
+  # Client projects
+  - 'clients/atomic/**'
+  - 'clients/fidelity/**'
+  - 'clients/p32/**'
+  - 'clients/peggyai/**'
+  
+  # Shared resources and tools
+  - 'shared/templates'
+  - 'shared/tools'
+  - 'shared/configs'
+  
+  # Documentation
+  - 'docs'

@@ -1,0 +1,30 @@
+{
+  "name": "pkai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pete Knows AI - Client Projects and Resources Monorepo",
+  "author": "Pete Knows AI",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean",
+    "typecheck": "pnpm -r run typecheck",
+    "client:atomic": "pnpm --filter @pkai/atomic",
+    "client:fidelity": "pnpm --filter @pkai/fidelity",
+    "client:p32": "pnpm --filter @pkai/p32",
+    "client:peggyai": "pnpm --filter @pkai/peggyai"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
